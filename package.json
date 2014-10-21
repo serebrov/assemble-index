@@ -1,0 +1,20 @@
+{
+  "name": "assemble-index",
+  "version": "0.0.1",
+  "description": "",
+  "author": {
+    "name": "Boris Serebrov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/serebrov/assemble-index.git"
+  },
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "gray-matter": "^0.4.2"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "assemble": "~0.4.35"
+  }
+}
