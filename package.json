@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "",
   "author": {
-    "name": "Boris Serebrov"
+    "name": "Boris Serebrov",
+    "email": "serebrov@gmail.com"
   },
   "repository": {
     "type": "git",
