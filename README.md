@@ -55,12 +55,28 @@ Note: at the moment there are no defaults, so all parameters are required.
     </ul>
 
     <ul>
+      {{#if indexPageIsFirst}}
+        <li><a href="#">Prev</a></li>
+      {{else}}
+        <li><a href="{{relative ../page.dest indexPagePrev.page.dest}}">Prev</a></li>
+      {{/if}}
       {{#each indexPages}}
-          <li><a href="{{relative ../page.dest this.page.dest}}">{{ indexPage }}</a>
-          </li>
+        <li><a href="{{relative ../page.dest this.page.dest}}">{{ indexPage }}</a></li>
       {{/each}}
+      {{#if indexPageIsLast}}
+        <li><a href="#">Next</a></li>
+      {{else}}
+        <li><a href="{{relative ../page.dest indexPageNext.page.dest}}">Next</a></li>
+      {{/if}}
     </ul>
     ```
 
 Here 'pages' refer to the limited subset of original pages and 'indexPages' are index pages itself,
 so it is possible to build a pagination to move between index pages.
+Additional variables:
+- indexPageIsFirst - true if current page is first
+- indexPageIsLast - true if current page is last
+- indexPageFirst - first index page
+- indexPageLast - last index page
+- indexPageNext - next index page
+- indexPagePrev - previous index page

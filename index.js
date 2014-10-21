@@ -81,6 +81,12 @@ var plugin = function(params, next) {
   var idx = 0, idxCount = indexPages.length;
   var renderPage = function() {
     var context = indexPages[idx];
+    context.indexPageIsFirst = (idx === 0);
+    context.indexPageIsLast = (idx === idxCount-1);
+    context.indexPageFirst = indexPages[0];
+    context.indexPagePrev = context.indexPageIsFirst ? null : indexPages[idx-1];
+    context.indexPageNext = context.indexPageIsLast ? null : indexPages[idx+1];
+    context.indexPageLast = indexPages[idxCount-1];
     context.indexPages = indexPages;
     assemble.engine.render(context.page.page, context, function (err, content) {
       if (err) {
