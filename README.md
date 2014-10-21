@@ -45,6 +45,7 @@ Note: at the moment there are no defaults, so all parameters are required.
 
 3. Add a template for index page, example:
 
+    ```html
     <ul>
       {{#each pages}}
           <li><a href="{{relative ../../page.dest this.dest}}">
@@ -59,6 +60,7 @@ Note: at the moment there are no defaults, so all parameters are required.
           </li>
       {{/each}}
     </ul>
+    ```
 
 Here 'pages' refer to the limited subset of original pages and 'indexPages' are index pages itself,
 so it is possible to build a pagination to move between index pages.
