@@ -69,6 +69,12 @@ var plugin = function(params, next) {
         indexPages.push(context);
     }
   }
+
+  if (!assemble.options.pages.length) {
+    grunt.log.write('assemble-index: No pages to process '.cyan);
+    return;
+  }
+
   buildIndex();
 
   var writePage = function(page) {
