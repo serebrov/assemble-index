@@ -1,20 +1,24 @@
-Plugin for assemble.io to generate an index page with pagination.
+Plugin for (assemble.io)[http://assemble.io] to generate an index page with pagination.
 
 Something like this:
 
+```
 Page 1
 -------
 - Post 1
 - Post 2
 - Post 3
 [-1- 2 3]
+```
 
+```
 Page 2
 ------
 - Post 3
 - Post 4
 - Post 5
 [1 -2- 3]
+```
 
 Configuration:
 1. Add 'assemble-index' to plugins
