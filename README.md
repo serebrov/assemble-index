@@ -1,4 +1,4 @@
-Plugin for (assemble.io)[http://assemble.io] to generate an index page with pagination.
+Plugin for [assemble.io](http://assemble.io) to generate an index page with pagination.
 
 Something like this:
 
