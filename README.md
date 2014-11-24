@@ -21,9 +21,12 @@ Page 2
 ```
 
 Configuration:
+
 1. Add 'assemble-index' to plugins
+
 2. Add a plugin configuration to options:
 
+    ```js
     taskname: {
         options: {
             collections: [{
@@ -44,8 +47,8 @@ Configuration:
             }
         },
     }
-
-Note: at the moment there are no defaults, so all parameters are required.
+    ```
+   Note: at the moment there are no defaults, so all parameters are required.
 
 3. Add a template for index page, example:
 
